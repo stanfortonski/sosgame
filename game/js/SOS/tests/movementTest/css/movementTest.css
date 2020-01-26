@@ -1,0 +1,9 @@
+.SOSEngine .window
+{
+	border: 1px solid black;
+}
+
+#battleWorld, #miniMap
+{
+	display: none;
+}

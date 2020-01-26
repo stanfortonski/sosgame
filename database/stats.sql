@@ -1,0 +1,65 @@
+USE SOSGAME;
+
+CREATE TABLE IF NOT EXISTS STATS(
+  `id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  `hp_min` MEDIUMINT NOT NULL,
+  `hp_max` MEDIUMINT NOT NULL,
+	`strength` MEDIUMINT NOT NULL,
+	`magic_power` MEDIUMINT NOT NULL,
+  `dexterity` MEDIUMINT NOT NULL,
+  `critical_chance` TINYINT NOT NULL,
+  `critical_strength` MEDIUMINT NOT NULL,
+  `escape` TINYINT NOT NULL,
+	`counter` TINYINT NOT NULL,
+	`energy` TINYINT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS DAMAGE(
+	`id` INT UNSIGNED NOT NULL,
+	`id_type_damage` TINYINT UNSIGNED NOT NULL,
+	`value_min` SMALLINT UNSIGNED NOT NULL,
+	`value_max` SMALLINT UNSIGNED NOT NULL,
+
+	PRIMARY KEY(`id`, `id_type_damage`)
+);
+
+CREATE TABLE IF NOT EXISTS IMMUNITIES(
+	`id` INT UNSIGNED NOT NULL,
+	`id_type_damage` TINYINT UNSIGNED NOT NULL,
+	`percentages` TINYINT UNSIGNED NOT NULL,
+
+	PRIMARY KEY(`id`, `id_type_damage`)
+);
+
+CREATE TABLE IF NOT EXISTS TYPES_OF_DAMAGE(
+	`id` TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	`name` CHAR(63) NOT NULL
+) ENGINE = MYISAM;
+
+CREATE TABLE IF NOT EXISTS STATS_UPDATER(
+	`id` TINYINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	`name` CHAR(63) NOT NULL,
+	`strength` TINYINT UNSIGNED NOT NULL,
+	`magic_power` TINYINT UNSIGNED NOT NULL,
+	`dexterity` TINYINT UNSIGNED NOT NULL
+) ENGINE = MYISAM;
+
+INSERT INTO STATS VALUES
+(1, 100, 100, 1, 1, 1, 1, 1, 1, 1, 1),
+(2, 100, 100, 10, 10, 10, 10, 10, 10, 10, 10);
+
+INSERT INTO TYPES_OF_DAMAGE VALUES
+(1, "obrażenia fizyczne"),
+(2, "obrażenia magiczne"),
+(3, "paraliż"),
+(4, "uzdrowienie");
+
+INSERT INTO STATS_UPDATER VALUES
+(1, "Wojownik", 5, 0, 1),
+(2, "Złodziej", 1, 0, 5),
+(3, "Wojownik", 4, 0, 2),
+(4, "Myśliwy", 2, 0, 4),
+(5, "Mag", 0, 4, 2),
+(6, "Wojownik-mag", 2, 2, 2),
+(7, "Myśliwy-mag", 1, 1, 4),
+(8, "Łowca", 3, 0, 3);

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SOSEngine Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.8.0.css">
+	<link rel="stylesheet" href="test.css">
+</head>
+<body>
+	<main id="SOSEngine" class="SOSEngine">
+		<div class="window">
+			<div class="scene" data-width="400" data-height="400" data-texture="grey">
+				<div class="object" id="TEST" data-x="25" data-y="12" data-width="5" data-height="5" data-texture="green" data-rotate="0" data-round="5"></div>
+
+				<div class="group" id="GROUPTEST" data-layer="50">
+					<div class="object" data-x="13" data-y="12" data-width="10" data-height="10"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/qunit/qunit-2.8.0.js"></script>
+	<script src="../src/main.js"></script>
+	<script src="../src/timer.js"></script>
+	<script src="../src/group/groupManipulator.js"></script>
+	<script src="../src/group/group.js"></script>
+	<script src="../src/group/staticGroup.js"></script>
+	<script src="../src/object/objectManipulator.js"></script>
+	<script src="../src/object/objectMath.js"></script>
+	<script src="../src/object/object.js"></script>
+	<script src="../src/object/staticObject.js"></script>
+	<script src="../src/image/image.js"></script>
+	<script src="../src/image/staticImage.js"></script>
+	<script src="../src/scene.js"></script>
+	<script src="../src/window.js"></script>
+	<script src="../src/camera-effects.js"></script>
+	<script src="../src/camera.js"></script>
+	<script src="../src/animations.js"></script>
+	<script src="../src/shapes/cross.js"></script>
+	<script src="../src/shapes/line.js"></script>
+	<script src="../src/shapes/arc.js"></script>
+	<script src="../src/shapes/circle.js"></script>
+	<script src="../src/make.js"></script>
+	<script src="src/test.js"></script>
+	<script src="src/objectManipulator.js"></script>
+	<script src="src/object.js"></script>
+	<script src="src/staticObject.js"></script>
+	<script src="src/group.js"></script>
+	<script src="src/staticGroup.js"></script>
+	<script src="src/scene.js"></script>
+	<script src="src/positioning.js"></script>
+	<script src="src/shapes.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+use SOSGAME;
+
+CREATE TABLE IF NOT EXISTS TEST(
+	`id` INT PRIMARY KEY AUTO_INCREMENT,
+	`name` VARCHAR(255) NOT NULL,
+	`bool` BOOLEAN NOT NULL,
+	`value` INT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS TEST_ENUM(
+	`enumerator` ENUM('good', 'bad', 'neutral')
+);
+
+CREATE TABLE IF NOT EXISTS EQ_PROCESSING(
+	`id_owner` INT UNSIGNED NOT NULL,
+	`id_subject` INT UNSIGNED NOT NULL,
+	`index` INT UNSIGNED NOT NULL,
+
+	PRIMARY KEY(`id_owner`, `id_subject`, `index`)
+);
+
+CREATE TABLE IF NOT EXISTS EQ_PROCESSING_EXT(
+	`id_owner` INT UNSIGNED NOT NULL,
+	`id_subject` INT UNSIGNED NOT NULL,
+	`index` INT UNSIGNED NOT NULL,
+	`amount` INT UNSIGNED NOT NULL,
+
+	PRIMARY KEY(`id_owner`, `id_subject`, `index`)
+);
+
+INSERT INTO TEST VALUES
+(1, 'TEST UNIT', 0, 666),
+(2, 'JANUSZ', 1, 333),
+(3, 'a', 1, 1),
+(4, 'b', 1, 1),
+(5, 'c', 0, 1),
+(6, 'd', 1, 1);
+
+INSERT INTO POSITIONS VALUES (2, 1, 2, 2);
+INSERT INTO STATS VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO CHARACTERS VALUES
+(1, 1, 1, 1, TRUE, "C1", 1, "any", 1, 1, 1, 1, 10),
+(2, 1, 1, 1, FALSE, "C2", 1, "first", 1, 1, 1, 1, 10);
+
+INSERT INTO ITEMS VALUES
+(1, 1, 1, 1, 1, "Przedmiot 1", "Opis", 100, 2, 1, ""),
+(2, 1, 1, 1, 2, "Przedmiot 2", "Opis", 200, 0, 10, "");
+
+INSERT INTO PLAYERS VALUES (1, 1, 1, DEFAULT);
+INSERT INTO HEROES VALUES (1, 1, 1, 1, 100);
+INSERT INTO GENERALS VALUES (1, 1, 1, 3, "TESTOWY", 0, 3, 2, 1, 0);
+
+INSERT INTO POSITIONS_OF_DEFAULT_ITEMS VALUES (1, 1), (1, 2);
+INSERT INTO POSITIONS_OF_DROPED_ITEMS VALUES (1, 3, 1), (2, 4, 2);
+
+INSERT INTO MOBS VALUES (1, 1, 1), (2, 1, 1), (3, 2, 1);
+INSERT INTO GROUPS_OF_MOBS VALUES (1, 1, 'neutral');
+INSERT INTO MOBS_IN_GROUPS VALUES (1, 1, 1), (1, 2, 2), (1, 3, 3);
+INSERT INTO DROPS_FROM_MOBS VALUES (1, 1, 2, 100);
+
+INSERT INTO OUTFITS VALUES (3, "default", "a"), (4, "default", "b");
+INSERT INTO OUTFITS_TO_BUY VALUES (1, 3, 1), (1, 4, 1);
+
+INSERT INTO TEAMS VALUES (2, 1, 2, false);

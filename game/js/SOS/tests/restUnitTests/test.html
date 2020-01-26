@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SOS Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.8.0.css">
+	<link rel="stylesheet" href="../../../SOSEngine/style.css">
+</head>
+<body>
+	<main id="SOSEngine" class="SOSEngine">
+		<div class="window">
+			<div class="scene" data-width="100" data-height="100"></div>
+		</div>
+	</main>
+
+	<div class="chat-main" style="display: none;">
+		<div class="position">
+			<section class="screen"></section>
+			<nav class="nav">
+				<button id="usersButton" class="button focus icon icon-players" type="button" data-title="Lista graczy na mapie"></button>
+				<button id="friendsButton" class="button focus icon icon-heart" type="button" data-title="Znajomi"></button>
+				<button id="blockedButton" class="button focus icon icon-enemies" type="button" data-title="Zablokowani"></button>
+			</nav>
+		</div>
+	</div>
+
+	<div class="chat-footer" style="display: none;">
+		<input type="text" class="input" placeholder="Twoja wiadomość">
+		<button type="button" class="button focus submit">Wyślij</button>
+	</div>
+
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://code.jquery.com/qunit/qunit-2.8.0.js"></script>
+	<script src="../../../SOSEngine/src/main.js"></script>
+	<script src="../../../SOSEngine/src/timer.js"></script>
+	<script src="../../../SOSEngine/src/group/groupManipulator.js"></script>
+	<script src="../../../SOSEngine/src/group/group.js"></script>
+	<script src="../../../SOSEngine/src/group/staticGroup.js"></script>
+	<script src="../../../SOSEngine/src/object/objectManipulator.js"></script>
+	<script src="../../../SOSEngine/src/object/objectMath.js"></script>
+	<script src="../../../SOSEngine/src/object/object.js"></script>
+	<script src="../../../SOSEngine/src/object/staticObject.js"></script>
+	<script src="../../../SOSEngine/src/image/image.js"></script>
+	<script src="../../../SOSEngine/src/image/staticImage.js"></script>
+	<script src="../../../SOSEngine/src/scene.js"></script>
+	<script src="../../../SOSEngine/src/window.js"></script>
+	<script src="../../../SOSEngine/src/camera-effects.js"></script>
+	<script src="../../../SOSEngine/src/camera.js"></script>
+	<script src="../../../SOSEngine/src/animations.js"></script>
+	<script src="../../../SOSEngine/src/shapes/cross.js"></script>
+	<script src="../../../SOSEngine/src/shapes/line.js"></script>
+	<script src="../../../SOSEngine/src/shapes/arc.js"></script>
+	<script src="../../../SOSEngine/src/shapes/circle.js"></script>
+	<script src="../../../SOSEngine/src/make.js"></script>
+	<script src="D:\xampp\htdocs\projects\sosgame\public\js\libs\js.cookie.min.js"></script>
+	<script src="D:\xampp\htdocs\projects\sosgame\public\js\libs\perfect-scrollbar.min.js"></script>
+	<script src="src/main.js"></script>
+	<script src="../../interfaces/components/bar.js"></script>
+	<script src="../../interfaces/components/charactersNet.js"></script>
+	<script src="../../interfaces/components/equipment.js"></script>
+	<script src="../../interfaces/components/explorerBox.js"></script>
+	<script src="../../interfaces/components/friendStack.js"></script>
+	<script src="../../interfaces/components/friendStack.js"></script>
+	<script src="../../interfaces/components/list.js"></script>
+	<script src="../../interfaces/components/stoper.js"></script>
+	<script src="../../interfaces/components/tabs.js"></script>
+	<script src="../../interfaces/components/title.js"></script>
+	<script src="../../objects/properties/animationList.js"></script>
+	<script src="../../objects/properties/animationList.js"></script>
+	<script src="../../objects/properties/movement.js"></script>
+	<script src="../../objects/properties/movement-ext.js"></script>
+	<script src="../../objects/properties/routing.js"></script>
+	<script src="../../objects/properties/travel.js"></script>
+	<script src="../../objects/character.js"></script>
+	<script src="../../objects/mob.js"></script>
+	<script src="../../objects/player.js"></script>
+	<script src="../../objects/item.js"></script>
+	<script src="../../chat.js"></script>
+	<script src="src/charactersTest.js"></script>
+	<script src="src/itemTest.js"></script>
+	<script src="src/explorerBoxTest.js"></script>
+	<script src="src/charactersNetTest.js"></script>
+	<script src="src/tabsTest.js"></script>
+	<script src="src/stoperTest.js"></script>
+	<script src="src/chatTest.js"></script>
+</body>
+</html>

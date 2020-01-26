@@ -1,0 +1,38 @@
+.breadcrumb
+{
+  border-radius: 0;
+  padding: 8px;
+}
+
+#races figure, #presets figure, #races img, #presets img, #races label, #presets label
+{
+  height: 350px;
+}
+
+#races h4
+{
+  margin-bottom: -20px;
+}
+
+.generalAnimations
+{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.generalAnimations img
+{
+  display: inline-block;
+  width: 120px;
+  height: auto;
+}
+
+#profile-editor textarea
+{
+  overflow-x: hidden;
+  min-height: 400px;
+  max-height: 1200px;
+  padding: 5px;
+}

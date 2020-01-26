@@ -1,0 +1,134 @@
+html
+{
+	position: relative;
+	min-height: 100%;
+	background: #4a6566;
+}
+
+body
+{
+	font-size: 22px;
+	background: #4a6566;
+	font-family: 'Fira Sans', sans-serif;
+	margin-bottom: 170px;
+}
+
+header
+{
+	width: 100%;
+	min-width: 65px;
+	background: #083c59;
+	position: -webkit-sticky !important;
+	position: sticky !important;
+	top: 0;
+	z-index: 9999;
+}
+
+header #user-submenu img
+{
+	-moz-transition: .2s all;
+	-o-transition: .2s all;
+	-webkit-transition: .2s all;
+	transition: .2s all;
+}
+
+header #user-submenu img:hover, header .dropdown.show #user-submenu img
+{
+	-moz-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+img#avatar-radius
+{
+	height: 33px;
+	width: 33px;
+	border-radius: 100%;
+}
+
+main
+{
+	margin-top: 20px;
+}
+
+footer
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	text-align: center;
+}
+
+footer .ad
+{
+	height: 100px;
+}
+
+footer .footer
+{
+	height: 50px;
+	background: #263e3f;
+	text-align: center;
+	font-size: .7em;
+	padding: 15px;
+}
+
+article
+{
+	background: #cebd94;
+	padding: 22px !important;
+	font-size: .9em;
+	border-left: 15px solid #7c3a21;
+	height: 100%;
+}
+
+main > .row *[class*="col"]
+{
+	margin-bottom: 15px;
+}
+
+article h1, article h2, article h3, article h4, article h5, article h6, article p
+{
+	text-align: left;
+}
+
+form
+{
+	text-align: center;
+}
+
+article .date
+{
+	font-size: .6em;
+	text-align: left;
+}
+
+article .readmore
+{
+	text-align: right;
+	font-weight: bold;
+	position: relative;
+	right: 30px;
+}
+
+article .readmore a
+{
+	color: rgba(0, 0, 0, 0.8) !important;
+}
+
+article .author
+{
+	border-top: black solid 1px;
+	font-size: .75em;
+	line-height: 115%;
+}
+
+@media (max-width: 576px)
+{
+	body
+	{
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,65 @@
+USE SOSGAME;
+
+CREATE TABLE IF NOT EXISTS MAPS(
+	`id` SMALLINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	`name` CHAR(63) NOT NULL,
+	`map_file` CHAR(63) NOT NULL,
+	`pvp_able` BOOLEAN NOT NULL
+) ENGINE = MYISAM;
+
+CREATE TABLE IF NOT EXISTS MUSIC_IN_MAPS(
+	`id_map` SMALLINT UNSIGNED NOT NULL,
+	`src` CHAR(63) NOT NULL,
+
+	PRIMARY KEY(`id_map`, `src`)
+) ENGINE = MYISAM;
+
+CREATE TABLE IF NOT EXISTS POSITIONS(
+	`id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+	`id_map` SMALLINT UNSIGNED NOT NULL,
+	`posX` SMALLINT UNSIGNED NOT NULL,
+	`posY` SMALLINT UNSIGNED NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS POSITIONS_OF_DEFAULT_ITEMS(
+	`id_position` INT UNSIGNED NOT NULL,
+	`id_item` SMALLINT UNSIGNED NOT NULL,
+	`amount` TINYINT UNSIGNED NOT NULL,
+
+	PRIMARY KEY(`id_position`, `id_item`)
+) ENGINE = MYISAM;
+
+CREATE TABLE IF NOT EXISTS POSITIONS_OF_DROPED_ITEMS(
+	`id_server` TINYINT UNSIGNED NOT NULL,
+	`id_position` INT UNSIGNED NOT NULL,
+	`id_item` SMALLINT UNSIGNED NOT NULL,
+	`amount` TINYINT UNSIGNED NOT NULL,
+
+	PRIMARY KEY(`id_server`, `id_position`, `id_item`)
+);
+
+CREATE TABLE IF NOT EXISTS TAKEN_ITEMS(
+	`id_server` TINYINT UNSIGNED NOT NULL,
+	`id_position` INT UNSIGNED NOT NULL,
+	`id_item` SMALLINT UNSIGNED NOT NULL,
+	`end_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+	PRIMARY KEY(`id_server`, `id_position`, `id_item`)
+);
+
+INSERT INTO MAPS VALUES (1, "Start", "test_world.php", true),
+(2, "House", "in_house.php", false),
+(3, "Home", "in_home.php", false),
+(4, "Umieralnia", "umieralnia.php", false);
+
+INSERT INTO POSITIONS VALUES
+(1, 1, 1, 1),
+(2, 1, 1, 1),
+(3, 1, 1, 1),
+(4, 1, 106, 60),
+(5, 1, 144, 64),
+(6, 1, 208, 179),
+(7, 2, 1, 1),
+(8, 2, 71, 1),
+(9, 3, 1, 1),
+(10, 4, 1, 1);

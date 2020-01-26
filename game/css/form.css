@@ -1,0 +1,116 @@
+[type='radio'], [type='checkbox'], [type='submit'], [type='button'], [role='button'], select option, button, label, a:link, a:visited, a:hover, .button, .zoom, .focus
+{
+  cursor: url('../imgs/cursors/pointer.png'), pointer;
+}
+
+[disabled]
+{
+  cursor: inherit;
+}
+
+button
+{
+	background: none;
+	border: none;
+}
+
+a:link, a:visited, a:hover
+{
+	color: black;
+}
+
+.link, a.link
+{
+	text-decoration: underline;
+	color: #04c4ef;
+}
+
+.button, a.button
+{
+	font-family: 'Ranga', cursive;
+	display: inline-block;
+	margin: 5px;
+	padding: 6px;
+	font-size: 1.2em;
+	line-height: 1;
+	background-color: #2b657c;
+  color: white !important;
+}
+
+.button img
+{
+  height: auto;
+  width: 100%;
+}
+
+.button a
+{
+	color: white;
+}
+
+.focus, .zoom
+{
+  transition: .15s linear all;
+	-webkit-transition: .15s linear all;
+	-moz-transition: .15s linear all;
+	-o-transition: .15s linear all;
+}
+
+.zoom:hover, .zoom:focus
+{
+	-o-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.zoom.extra:hover, .zoom.extra:focus
+{
+	-o-transform: scale(1.22);
+	-moz-transform: scale(1.22);
+	-webkit-transform: scale(1.22);
+	transform: scale(1.22);
+}
+
+.focus:hover, .focus:focus
+{
+	outline: 3.5px solid #05bf9d;
+}
+
+input[type='text'], input[type='number']
+{
+	font-family: 'Ranga', cursive;
+	font-size: 1.1em;
+	display: inline-block;
+	padding: 3px 6px;
+	border: none;
+	color: rgba(255, 255, 255, .55);
+	background: rgba(255, 255, 255, .1);
+}
+
+table
+{
+	width: 95%;
+  table-layout: fixed;
+  empty-cells: show;
+}
+
+td, th
+{
+  display: table-cell;
+	text-align: center;
+  padding: 12px 15px;
+  width: 1%;
+}
+
+th
+{
+  text-align: left;
+}
+
+.ui-slider-handle
+{
+ 	width: 2.2em !important;
+	text-align: center;
+  cursor: inherit !important;
+}

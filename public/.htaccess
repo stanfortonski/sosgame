@@ -1,0 +1,28 @@
+# PROTECT FILES
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh|dat)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+# REWRITE NAMES
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www\.sosgame\.online$ [NC]
+RewriteRule ^(.*)$ http://sosgame.online/$1 [L,R=301]
+
+RewriteRule ^profile/(\d+)/?$ http://sosgame.online/profile?id=$1
+RewriteRule ^news/(\d+)/?$ http://sosgame.online/?nxt=$1
+RewriteRule ^article/(\d+)/?$ http://sosgame.online/article?id=$1
+RewriteRule index http://sosgame.online/ [R=301]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^/?(.*)$ /$1.php [L]
+
+# ERROR PAGES
+ErrorDocument 400 http://sosgame.online/error?type=400
+ErrorDocument 403 http://sosgame.online/error?type=403
+ErrorDocument 404 http://sosgame.online/error?type=404
+ErrorDocument 500 http://sosgame.online/error?type=500

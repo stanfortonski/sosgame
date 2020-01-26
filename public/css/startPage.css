@@ -1,0 +1,34 @@
+#slider
+{
+	padding: 0;
+	margin: 0;
+	border-bottom: 5px solid white;
+}
+
+#slider .carousel-item
+{
+	height: 400px;
+}
+
+#slider img
+{
+	height: 400px;
+	width: 100%;
+	display: block;
+}
+
+main
+{
+	margin-top: 0 !important;
+}
+
+#sideMenu
+{
+	background: #7c999b;
+}
+
+#sideMenu .ad
+{
+	margin-top: 100px;
+	min-height: 500px;
+}

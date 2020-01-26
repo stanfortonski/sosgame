@@ -1,0 +1,93 @@
+.thumbnails figure
+{
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnails figure > img
+{
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.thumbnails figure > figcaption
+{
+  position: absolute;
+  top: 87%;
+  width: 100%;
+  height: 13%;
+  text-align: center;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 8px;
+  font-size: .8em;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.thumbnails.full-fig figure > figcaption
+{
+  height: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.thumbnails.no-fig figure > figcaption
+{
+  display: none;
+}
+
+/*Animations*/
+.thumbnails.scale figure:hover > img
+{
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.thumbnails.fadeIn figure > figcaption
+{
+  opacity: 0
+}
+
+.thumbnails.fadeIn figure:hover > figcaption
+{
+  opacity: 1;
+}
+
+/*Picker*/
+.thumbnails label
+{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.thumbnails input[type="radio"]
+{
+  opacity: 0;
+  height: 10px;
+}
+
+.thumbnails input[type="radio"]:checked ~ label figure, .imagePicker input[type="checkbox"]:checked ~ label figure
+{
+  outline: 5px solid #007bff;
+}
+
+.thumbnails .form-group
+{
+  padding: 4px !important;
+}

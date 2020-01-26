@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>SOS Movement Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.8.0.css">
+	<link rel="stylesheet" href="../../../SOSEngine/style.css">
+	<link rel="stylesheet" href="css/movementTest.css">
+</head>
+<body>
+	<main id="SOSEngine" class="SOSEngine">
+		<div class="window">
+			<div class="scene" data-width="210" data-height="100" data-texture="grey">
+				<div class="object" data-x="30" data-y="22" data-width="35" data-height="23" data-texture="green"></div>
+
+				<div class="object" data-x="1" data-y="68" data-width="35" data-height="10" data-texture="green"></div>
+
+				<div class="group">
+					<div class="object" data-x="140" data-y="35" data-width="25" data-height="15" data-texture="yellow"></div>
+					<div class="object" data-x="134" data-y="65" data-width="15" data-height="15" data-texture="pink"></div>
+					<div class="object" data-x="125" data-y="50" data-width="45" data-height="15" data-texture="rgba(255,255, 255, .5)"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div id="battleWorld" class="SOSEngine">
+		<div class="window">
+			<div class="scene" data-width="1" data-height="1">
+			</div>
+		</div>
+	</div>
+
+	<div id="miniMap" class="SOSEngine">
+		<div class="window">
+			<div class="scene" data-width="1" data-height="1">
+			</div>
+		</div>
+	</div>
+
+	<div id="startData" data-pvpable="1"></div>
+
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/qunit/qunit-2.8.0.js"></script>
+	<script src="../../../SOSEngine/src/main.js"></script>
+	<script src="../../../SOSEngine/src/timer.js"></script>
+	<script src="../../../SOSEngine/src/group/groupManipulator.js"></script>
+	<script src="../../../SOSEngine/src/group/group.js"></script>
+	<script src="../../../SOSEngine/src/group/staticGroup.js"></script>
+	<script src="../../../SOSEngine/src/object/objectManipulator.js"></script>
+	<script src="../../../SOSEngine/src/object/objectMath.js"></script>
+	<script src="../../../SOSEngine/src/object/object.js"></script>
+	<script src="../../../SOSEngine/src/object/staticObject.js"></script>
+	<script src="../../../SOSEngine/src/image/image.js"></script>
+	<script src="../../../SOSEngine/src/image/staticImage.js"></script>
+	<script src="../../../SOSEngine/src/scene.js"></script>
+	<script src="../../../SOSEngine/src/window.js"></script>
+	<script src="../../../SOSEngine/src/camera-effects.js"></script>
+	<script src="../../../SOSEngine/src/camera.js"></script>
+	<script src="../../../SOSEngine/src/animations.js"></script>
+	<script src="../../../SOSEngine/src/shapes/cross.js"></script>
+	<script src="../../../SOSEngine/src/shapes/line.js"></script>
+	<script src="../../../SOSEngine/src/shapes/arc.js"></script>
+	<script src="../../../SOSEngine/src/shapes/circle.js"></script>
+	<script src="../../../SOSEngine/src/make.js"></script>
+	<script src="../../main.js"></script>
+	<script src="../../objects/properties/animationList.js"></script>
+	<script src="../../objects/properties/movement.js"></script>
+	<script src="../../objects/properties/movement-ext.js"></script>
+	<script src="../../objects/properties/routing.js"></script>
+	<script src="../../objects/properties/travel.js"></script>
+	<script src="src/movementTest.js"></script>
+</body>
+</html>

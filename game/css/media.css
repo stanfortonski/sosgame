@@ -1,0 +1,68 @@
+@media (max-width: 624px)
+{
+  body
+  {
+    font-size: 20px;
+  }
+
+  .introduce
+  {
+    font-size: 2em;
+  }
+
+  .loading
+  {
+    font-size: 2.5em;
+  }
+
+  .loading .bar
+  {
+    font-size: .5em;
+  }
+
+  #mainInterface .rightMenu
+  {
+  	width: 70px;
+  }
+
+  #mainInterface .rightMenu nav .icon
+  {
+    font-size: 50px;
+  }
+
+  #mainInterface .footer
+  {
+    height: 60px;
+  }
+}
+
+@media (max-height: 700px)
+{
+  #mainInterface .rightMenu
+  {
+    overflow: scroll;
+  }
+
+  #battleInterface .footer
+  {
+    height: 80px;
+  }
+}
+
+@media (max-width: 1024px)
+{
+  #battleInterface .rightMenu
+  {
+    width: 160px;
+  }
+
+  #battleInterface .SOSEngine
+  {
+  	left: 160px;
+  }
+
+  #battleInterface .leftMenu
+  {
+    width: 160px;
+  }
+}

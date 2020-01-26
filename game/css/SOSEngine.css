@@ -1,0 +1,55 @@
+.SOSEngine .scene
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.SOSEngine .scene, .unselectable
+{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.SOSEngine .window
+{
+	overflow: hidden;
+	zoom: 100%;
+}
+
+.SOSEngine .object
+{
+	position: absolute;
+	z-index: 1;
+}
+
+.SOSEngine .image
+{
+	position: absolute;
+	background-repeat: no-repeat !important;
+	z-index: 1;
+}
+
+.SOSEngine .turnX
+{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.SOSEngine .turnY
+{
+	-moz-transform: scaleY(-1);
+	-o-transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.SOSEngine .object img
+{
+	position: absolute;
+	background-repeat: no-repeat !important;
+}

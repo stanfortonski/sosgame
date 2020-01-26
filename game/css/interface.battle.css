@@ -1,0 +1,59 @@
+#battleInterface
+{
+  display: none;
+}
+
+#battleInterface .leftMenu
+{
+	width: 280px;
+  background: #253c4c;
+  border-right: 5px solid #021c2d;
+  padding-right: 8px;
+  padding-left: 8px;
+  -webkit-box-shadow: 4em -2px 21px 0px rgba(0, 0, 0, .32);
+  -moz-box-shadow: 4em -2px 21px 0px rgba(0, 0, 0, .32);
+  box-shadow: 4em -2px 21px 0px rgba(0, 0, 0, .32);
+}
+
+#battleInterface .SOSEngine
+{
+	left: 280px;
+	top: 40px;
+}
+
+#battleInterface .rightMenu
+{
+	top: 40px;
+	width: 280px;
+  background: #253c4c;
+  border-left: 5px solid #021c2d;
+  padding-right: 8px;
+  padding-left: 8px;
+  -webkit-box-shadow: -4em -2px 21px 0px rgba(0, 0, 0, .32);
+  -moz-box-shadow: -4em -2px 21px 0px rgba(0, 0, 0, .32);
+  box-shadow: -4em -2px 21px 0px rgba(0, 0, 0, .32);
+}
+
+#battleInterface .footer
+{
+  background: #0a2a3f;
+  height: 140px;
+  padding: 10px;
+  border-top: 5px solid #021c2d;
+}
+
+#battleInterface .rightMenu .charactersNet
+{
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#battleInterface .rightMenu .charactersNet .bar .label
+{
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

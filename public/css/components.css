@@ -1,0 +1,98 @@
+.btn
+{
+	background: #0b537a;
+	color: white;
+	border-radius: 0;
+}
+
+.form-control, .form-control-lg, .btn-group, .btn-group-lg, .btn-group-vertical
+{
+	border-radius: 0 !important;
+}
+
+.btn:hover
+{
+	background: #1795d8;
+}
+
+select option[disabled]
+{
+	background: #939393;
+	color: white;
+	font-size: 1.2em;
+}
+
+.articleNavBar a
+{
+	border-radius: 0 !important;
+	padding-left: 1.8em;
+	padding-right: 1.8em;
+}
+
+.g-recaptcha
+{
+	padding: 10px;
+	transform: scale(0.77);
+	-webkit-transform: scale(0.77);
+	-moz-transform: scale(0.77);
+	-o-transform: scale(0.77);
+	transform-origin:0 0;
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-o-transform-origin:0 0;
+}
+
+.error
+{
+	text-align: center;
+	color: white;
+	z-index: 100;
+	padding: 4px;
+	font-size: .7em;
+	max-height: 100px;
+}
+
+form > .error
+{
+	position: absolute;
+	display: inline-block;
+	margin-left: 5px !important;
+}
+
+.error.arrowed:before
+{
+	position: absolute;
+	content: '';
+	left: -5px;
+	top: 25%;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid #dc3545;
+}
+
+@media (max-width: 576px)
+{
+	form > .error
+	{
+		position: absolute !important;
+		display: inline-block !important;
+		width: auto !important;
+	}
+
+	form > .error.arrowed:before
+	{
+		display: block;
+	}
+
+	.error.arrowed:before
+	{
+		display: none;
+	}
+}
+
+.error-box
+{
+	margin-top: 10px;
+}

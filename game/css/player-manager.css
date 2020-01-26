@@ -1,0 +1,68 @@
+html, body
+{
+  background: #191e21;
+  cursor: url('../imgs/cursors/cursor.png'), auto;
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+
+header, footer
+{
+  display: none !important;
+}
+
+main
+{
+  background: #242c30;
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+  margin-top: -20px;
+  padding-bottom: 120px;
+  padding-top: 50px;
+}
+
+.generalThumbnail img
+{
+  max-width: 500px;
+  width: 100%;
+  max-height: 500px;
+  height: auto;
+  border: double 5px orange;
+}
+
+@media (max-width: 576px)
+{
+  .generalThumbnail
+  {
+    min-height: auto;
+  }
+}
+
+#selecting *
+{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#toolbar
+{
+  background: #191e21;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.icon
+{
+  width: 16%;
+}
+
+button, input, *[role="button"], .btn, a
+{
+  cursor: url('../imgs/cursors/pointer.png'), auto !important;
+}

@@ -1,0 +1,140 @@
+#mainInterface .header
+{
+	color: white;
+	position: absolute;
+	text-align: center;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	opacity: .75;
+	background: #053a51;
+}
+
+#mainInterface .rightMenu
+{
+	width: 95px;
+	z-index: 1000;
+}
+
+#mainInterface .rightMenu nav
+{
+	text-align: right;
+	padding-left: 4px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+#mainInterface .rightMenu nav .icon
+{
+	font-size: 75px;
+	background-size: 85%;
+}
+
+#mainInterface .footer
+{
+	height: 55px;
+	z-index: 1000;
+}
+
+#mainInterface .footer nav
+{
+	display: inline-block;
+	position: relative;
+	color: white;
+	height: 100%;
+	width: 55%;
+	min-width: 250px;
+	max-width: 320px;
+	padding-top: .05em;
+	padding-left: 2em;
+	padding-right: 2em;
+	background: #083447;
+	-webkit-border-top-left-radius: 100px;
+	-webkit-border-top-right-radius: 100px;
+	-moz-border-radius-topleft: 100px;
+	-moz-border-radius-topright: 100px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom: none;
+	overflow: hidden;
+}
+
+#mainInterface .footer nav .button
+{
+	font-size: 1.85em;
+	vertical-align: text-top;
+	max-width: 2.2em;
+	max-height: 2.2em;
+	background-size: 85%;
+}
+
+#ping
+{
+	font-size: .8em;
+	color: white;
+	background: #000a0e;
+	border-bottom: solid 1.5px white;
+	padding: 2.5px 4px;
+}
+
+#worldInfo
+{
+	font-size: .86em;
+	background: #053a51;
+	padding: 3.5px 4.5px;
+}
+
+#worldInfo div
+{
+	max-height: 1.2em;
+	overflow: hidden;
+}
+
+#worldInfo div:first-of-type
+{
+	font-size: .9em;
+}
+
+#miniMap
+{
+	width: 100%;
+	height: 100%;
+}
+
+#miniMap .scene
+{
+	transform-origin: top left;
+}
+
+#miniMap .window
+{
+	z-index: 1;
+	background: transparent;
+	overflow: visible !important;
+}
+
+#hp .bar
+{
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.heroEquipment
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.heroStats
+{
+	font-size: 0.75em;
+}
+
+.heroStats .icon
+{
+	max-width: 15em;
+	max-height: 15em;
+	border: 4px double yellow;
+}

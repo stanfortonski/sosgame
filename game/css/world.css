@@ -1,0 +1,110 @@
+#me
+{
+	z-index: 1 !important;
+	cursor: url('../imgs/cursors/cursor.png'), auto;
+}
+
+.character
+{
+	z-index: 2 !important;
+}
+
+.player img
+{
+	width: 130% !important;
+	height: 110% !important;
+}
+
+.item
+{
+	border-style: solid;
+	border-width: 2px;
+}
+
+.item-1
+{
+	border-color: #717575;
+}
+
+.item-2
+{
+	border-color: #aa6b12;
+}
+
+.item-3
+{
+	border-color: yellow;
+}
+
+.item-4
+{
+	border-color: #9b09bc;
+}
+
+.item.icon .amount
+{
+	position: absolute;
+	color: red;
+	font-size: 15px;
+	right: 2px;
+	bottom: 2px;
+	text-shadow: .8px 0px 0px black;
+}
+
+.door
+{
+	border: 1px solid red;
+	border-color: rgba(255, 0, 0, .85);
+	border-radius: 2px;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.door:hover
+{
+	border-width: 2px;
+}
+
+.item, .character, .item, .door
+{
+	cursor: url('../imgs/cursors/pointer.png'), pointer;
+}
+
+.description
+{
+	position: absolute;
+	top: -8px;
+	left: -15%;
+	width: 160%;
+	color: yellow;
+	background: black;
+	background: rgba(1, 1, 1, 0.3);
+	text-align: center;
+	z-index: 1000;
+}
+
+.description.enemy
+{
+	color: #ef0e0e;
+}
+
+.description.friend
+{
+	color: #39bc01;
+}
+
+#miniMap .door
+{
+	display: none;
+}
+
+#miniMap .pointer
+{
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	visibility: visible;
+}
