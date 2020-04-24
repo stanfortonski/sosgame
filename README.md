@@ -1,5 +1,6 @@
 # SOSGame MMORPG
-### Abandoned Project
+### Abandoned Project - old closed
+Antipatterns, no clear code :/
 
 ## Installation
 ```
