@@ -39,13 +39,13 @@
 
 				$this->path = [
 					'main' => 'http://sosgame.online/',
-					'main-local' => 'D:/xampp/htdocs/projects/sosgame/public/',
+					'main-local' => 'Your path to main via apache vhosts',
 
 					'game' => 'http://play.sosgame.online/',
-					'game-local' => 'D:/xampp/htdocs/projects/sosgame/game/',
+					'game-local' => 'Your path to game via apache vhosts',
 
 					'panel' => 'http://panel.sosgame.online/',
-					'panel-local' => 'D:/xampp/htdocs/projects/sosgame/panel/',
+					'panel-local' => 'Your path to panel via apache vhosts',
 
 					'actual' => 'http://'.$serverName.'/',
 					'actual-local' => $_SERVER['DOCUMENT_ROOT'].'/'
@@ -58,7 +58,7 @@
 					'password' => ''
 				];
 
-				$this->mailAddress = 'nerotestero@gmail.com';
+				$this->mailAddress = 'Your mail address';
 			}
 		}
 

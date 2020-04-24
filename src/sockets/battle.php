@@ -48,7 +48,7 @@
 				switch ($query->name)
 				{
 					case 'battle-init':{
-						echo 'no ok';
+						echo 'OK';
 					}
 					break;
 				}
