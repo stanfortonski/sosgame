@@ -1,6 +1,5 @@
 # SOSGame MMORPG
 ### Abandoned Project - old closed
-Antipatterns, no clear code :/
 
 ## Installation
 ```
@@ -15,3 +14,6 @@ composer install
 - jQuery
 - jQuery UI
 - QUnit
+
+
+Antipatterns, no clear code caused by frequent reconstruction :/
