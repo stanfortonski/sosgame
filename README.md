@@ -16,4 +16,4 @@ composer install
 - QUnit
 
 
-Antipatterns, no clear code caused by frequent reconstruction :/
+:/
