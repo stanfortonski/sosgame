@@ -1,6 +1,8 @@
 # SOSGame MMORPG
 ### Abandoned Project - old closed
 
+YouTube video: https://www.youtube.com/watch?v=DHoUlHN6YO0
+
 ## Installation
 ```
 composer install
